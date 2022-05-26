@@ -1,0 +1,14 @@
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/hibernatetest
+      username: postgres
+      password: 12345678
+  session:
+      store-type: jdbc
+      jdbc:
+        initialize-schema: always
+  sql:
+    init:
+      mode: always
+  jpa:
+    defer-datasource-initialization: true
